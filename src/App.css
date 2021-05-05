@@ -1,0 +1,328 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  margin: 20px;
+  font-family: 'Great Vibes', cursive;
+  color: #0b3c49;
+}
+
+.wineThoughts {
+  font-size: 55px;
+  color: #0b3c49;
+  font-family: 'Great Vibes', cursive;
+}
+
+img {
+  width: 15%;
+  border-radius: 5px;
+  border: 3px solid #87baab;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+span {
+  font-size: 20px;
+  padding: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: #0b3c49;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+  cursor: pointer;
+  line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+  border: none;
+  background-color: #8f2d56;
+  border-radius: 5px;
+}
+
+button span {
+  transition: all 0.3s;
+}
+
+button::before {
+  content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: rgba(255,255,255,0.5);
+	border-bottom-color: rgba(255,255,255,0.5);
+	transform: scale(0.1, 1);
+}
+
+button:hover span {
+  letter-spacing: 2px;
+}
+
+button:hover::before {
+  opacity: 1;	
+	transform: scale(1, 1);	
+}
+
+button::after {
+  content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255,255,255,0.1);
+}
+
+button:hover::after {
+  opacity: 0;	
+	transform: scale(0.1, 1);
+}
+
+.navBar {
+  padding: 20px;
+  font-size: 20px;
+  background-color: #87baab;
+  text-align: center;
+}
+
+.delete {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.navLink {
+  color: white;
+}
+
+.createWineBtn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 15px;
+
+}
+
+.deleteWineBtn {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.homeBtn {
+  margin-top: 15px;
+  padding-right: 10px;
+}
+
+.newWine {
+  padding-right: 10px;
+}
+
+.wineFormLink {
+  margin-top: 15px;
+  padding-right: 10px;
+  color: white;
+}
+
+.singleWineContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wineDescription {
+  width: 70%;
+  margin-bottom: 50px;
+}
+
+.newWineBtn {
+  display: flex;
+  justify-items: center;
+}
+
+.wineListContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 20px;
+  justify-self: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+.wine-list {
+  width: 80%;
+  list-style-type: none;
+  padding: 20px;
+  font-size: 25px;
+  border: 5px solid #0b3c49;
+  border-radius: 5px;
+  background-color: #dbb3b1;
+}
+
+.searchBar {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 3px solid #0b3c49;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.singleWineContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.commentForm {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  background-color: #8f2d56;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.commentLabel {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.commentInput {
+  border-radius: 5px;
+}
+
+.commentBtn {
+  margin-left: 20px;
+  padding: 5px;
+  background-color: #2a2c24;
+  color: white;
+  border-radius: 5px;
+}
+
+.commentSection {
+  border: 2px solid black;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.nameArea {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.emailArea {
+  margin-bottom: 20px;
+
+}
+
+.signUpBtnArea {
+  margin-top: 20px;
+}
+
+.signUpBtn {
+  padding: 10px;
+  font-size: 15px;
+}
+
+.signUpInput {
+  width: 200px;
+  padding: 10px;
+}
+
+.loginFormArea {
+  margin-top: 20px;
+}
+
+.loginInput{
+  width: 200px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.createWineInput {
+  width: 40%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px solid #0b3c49;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 150px;
+}
+
+.createWineLabelDiv {
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.createWineSubmit {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+  cursor: pointer;
+  line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+  border: none;
+  background-color: #8f2d56;
+  border-radius: 5px;
+}
+
+.editWineLabelDiv {
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+
+.editWineInput {
+  width: 40%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 3px solid #0b3c49;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.editWineSubmit {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #FFF;
+	transition: all 0.3s;
+	position: relative;
+  cursor: pointer;
+  line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+  border: none;
+  background-color: #8f2d56;
+  border-radius: 5px;
+}
